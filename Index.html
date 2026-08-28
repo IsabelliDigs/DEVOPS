@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 
 <head>
@@ -13,57 +12,51 @@
     <header class="topo">
         <h1>Portal Acadêmico DevOps</h1>
 
-    <nav class="navegacao">
-        <a href="#servicos">Serviços</a>
-    </nav>
+        <button id="botaoMatricula">Matrícula</button>
+        <button id="botaoCalendario">Calendário</button>
+        <button id="botaoAtendimento">Atendimento</button>
+    </header>
 
-    <button id="botaoDestaque">Ver serviços</button>
-</header>
+    <main>
+        <section id="servicos" class="secao">
+            <h2>Serviços disponíveis</h2>
 
-<main>
-    <section id="servicos" class="secao">
-        <h2>Serviços disponíveis</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Matrícula</h3>
+                    <p>Orientações sobre matrícula e documentação.</p>
+                </article>
 
-        <div class="cards">
-            <article class="card">
-                <h3>Matrícula</h3>
-                <p>Orientações sobre matrícula e documentação.</p>
-            </article>
+                <article class="card">
+                    <h3>Calendário</h3>
+                    <p>Datas importantes do período letivo.</p>
+                </article>
 
-            <article class="card">
-                <h3>Calendário</h3>
-                <p>Datas importantes do período letivo.</p>
-            </article>
+                <article class="card">
+                    <h3>Atendimento</h3>
+                    <p>Canal para dúvidas e solicitações.</p>
+                </article>
+            </div>
+        </section>
 
-            <article class="card">
-                <h3>Atendimento</h3>
-                <p>Canal para dúvidas e solicitações.</p>
-            </article>
-        </div>
-    </section>
+        <section class="secao">
+            <h2>Contato</h2>
 
-    <section class="secao">
-        <h2>Contato</h2>
+            <form id="formContato">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Digite seu nome">
 
-        <form id="formContato">
-            <label for="nome">Nome</label>
-            <input id="nome" type="text" placeholder="Digite seu nome">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" placeholder="Digite sua solicitação"></textarea>
 
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" placeholder="Digite sua solicitação"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
 
-            <button type="submit">Enviar</button>
-        </form>
+            <p id="resposta"></p>
+        </section>
+    </main>
 
-        <p id="resposta"></p>
-    </section>
-</main>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
-
-
-
