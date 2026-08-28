@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -6,15 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Acadêmico DevOps</title>
     <link rel="stylesheet" href="style.css">
+
+    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
     <header class="topo">
         <h1>Portal Acadêmico DevOps</h1>
 
-        <button id="botaoMatricula">Matrícula</button>
-        <button id="botaoCalendario">Calendário</button>
-        <button id="botaoAtendimento">Atendimento</button>
+        <nav class="navegacao">
+            <a href="#servicos">Serviços</a>
+        </nav>
+
+        <button id="botaoDestaque">Ver serviços</button>
     </header>
 
     <main>
@@ -22,20 +29,28 @@
             <h2>Serviços disponíveis</h2>
 
             <div class="cards">
+
+                
                 <article class="card">
-    <h3>Matrícula</h3>
-    <p>Consulte orientações sobre matrícula, documentação necessária e procedimentos acadêmicos.</p>
-</article>
- 
-<article class="card">
-    <h3>Calendário</h3>
-    <p>Acompanhe datas importantes do período letivo, como início das aulas, avaliações e prazos acadêmicos.</p>
-</article>
- 
-<article class="card">
-    <h3>Atendimento</h3>
-    <p>Encontre o canal adequado para esclarecer dúvidas, solicitar informações e receber suporte acadêmico.</p>
-</article>
+                    <i class="fa-solid fa-file-signature icone-servico"></i>
+                    <h3>Matrícula</h3>
+                    <p>Orientações sobre matrícula e documentação.</p>
+                </article>
+
+                
+                <article class="card">
+                    <i class="fa-solid fa-calendar-days icone-servico"></i>
+                    <h3>Calendário</h3>
+                    <p>Datas importantes do período letivo.</p>
+                </article>
+
+                
+                <article class="card">
+                    <i class="fa-solid fa-headset icone-servico"></i>
+                    <h3>Atendimento</h3>
+                    <p>Canal para dúvidas e solicitações.</p>
+                </article>
+
             </div>
         </section>
 
@@ -47,7 +62,8 @@
                 <input id="nome" type="text" placeholder="Digite seu nome">
 
                 <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" placeholder="Digite sua solicitação"></textarea>
+                <textarea id="mensagem"
+                    placeholder="Digite sua solicitação"></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -60,3 +76,4 @@
 </body>
 
 </html>
+
